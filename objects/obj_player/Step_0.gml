@@ -13,7 +13,7 @@ hspd = moveH * spd
 vspd = moveV * spd
 layer_create(1,"Text")
 
-if(movable || hasSword){
+if(movable){
 if(place_meeting(x+hspd,y,[obj_wall])){
 	while(!place_meeting(x+sign(hspd),y,[obj_wall])){
 		x = x + sign(hspd)
@@ -113,10 +113,3 @@ if(letGo){
 	hasSword = false
 	letGo = false
 }
-if(mouse_check_button_pressed(mb_left)){
-	instance_create_layer(mouse_x,mouse_y,"Text",obj_text);
-}
-
-
-
-

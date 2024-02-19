@@ -13,6 +13,6 @@ if (place_meeting(x,y, obj_player)){
 } else {
 	if(mytext != noone){
 	instance_destroy(mytext);
-	mytext = noone;;
+	mytext = noone;
 	}
 }
