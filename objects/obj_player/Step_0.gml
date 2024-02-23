@@ -14,6 +14,8 @@ vspd = moveV * spd
 layer_create(1,"Text")
 
 if(movable){
+
+//MOVIMENTAÇÃO E COLISÃO
 if(place_meeting(x+hspd,y,walls)){
 	while(!place_meeting(x+sign(hspd),y,walls)){
 		x = x + sign(hspd)
@@ -32,7 +34,11 @@ if(place_meeting(x,y+vspd,walls)){
 
 y = y + vspd
 
+if(instance_place(x,y,obj_bottomWall)){
+	
+}
 
+//ALTERNAR SPRITES
 if(vspd > 0){
 	sprite_index = spr_playerDown
 }else if(vspd < 0){
