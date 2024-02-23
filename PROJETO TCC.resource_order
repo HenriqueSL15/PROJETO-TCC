@@ -1,12 +1,19 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Transparent","order":4,"path":"folders/Objects/Blocks/Transparent.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"Menu","order":1,"path":"rooms/Menu/Menu.yy",},
+    {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
     {"name":"spr_playerUp","order":6,"path":"sprites/spr_playerUp/spr_playerUp.yy",},
     {"name":"spr_playerRight","order":5,"path":"sprites/spr_playerRight/spr_playerRight.yy",},
     {"name":"ft_textBox","order":1,"path":"fonts/ft_textBox/ft_textBox.yy",},
+    {"name":"spr_topWall","order":3,"path":"sprites/spr_topWall/spr_topWall.yy",},
     {"name":"spr_playerLeft","order":4,"path":"sprites/spr_playerLeft/spr_playerLeft.yy",},
+    {"name":"obj_topWall","order":3,"path":"objects/obj_topWall/obj_topWall.yy",},
     {"name":"spr_playerDown","order":3,"path":"sprites/spr_playerDown/spr_playerDown.yy",},
     {"name":"spr_playerTEST","order":1,"path":"sprites/spr_playerTEST/spr_playerTEST.yy",},
+    {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"spr_bottomWall","order":2,"path":"sprites/spr_bottomWall/spr_bottomWall.yy",},
   ],
 }

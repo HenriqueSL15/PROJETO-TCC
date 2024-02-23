@@ -9,6 +9,8 @@ letGo = false
 
 strength = 0
 
+walls = [obj_wall,obj_topWall]
+
 dash_dir = -1;
 dash_vspd = 6;
 dash_timer = 15;
