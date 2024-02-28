@@ -1,5 +1,10 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Enemy","order":1,"path":"folders/Objects/Enemy.yy",},
+    {"name":"Enemy_1","order":1,"path":"folders/Objects/Enemy/Enemy_1.yy",},
+    {"name":"Enemy","order":1,"path":"folders/Sprites/Enemy.yy",},
+    {"name":"Enemy_1","order":1,"path":"folders/Sprites/Enemy/Enemy_1.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"Menu","order":1,"path":"rooms/Menu/Menu.yy",},
     {"name":"spr_playerUp","order":6,"path":"sprites/spr_playerUp/spr_playerUp.yy",},

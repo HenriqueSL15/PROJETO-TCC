@@ -7,15 +7,6 @@ if (place_meeting(x,y, obj_player)){
 		mytext = instance_create_layer(obj_player.x - 200,obj_player.y + 120,"Text",obj_text);
 		mytext.text = texting;
 		mytext.creator = self;
-		
-		
-		
-		//asdasjdashdashdashdashdasdhasdhasdha
-		
-		
-		
-		
-		
 		mytext.name = myName;
 		}
 	}

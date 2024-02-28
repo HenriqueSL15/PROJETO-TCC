@@ -4,3 +4,6 @@
 mytext = noone;
 myName = ""
 texting[0] = "";
+aaaaaa = 6;
+
+//bw

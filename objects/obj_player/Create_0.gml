@@ -13,7 +13,7 @@ dash_dir = -1;
 dash_vspd = 6;
 dash_timer = 15;
 dash = true;
-dash_delay = 15 * 1;
+dash_delay = 60 * 2;
 
 
 
