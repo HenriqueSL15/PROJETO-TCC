@@ -13,9 +13,9 @@ var dash_btn = keyboard_check_pressed(ord("X"))
             dash_dir = 0
         }else if(sprite_index == spr_playerLeft){
             dash_dir = 180
-        }else if(sprite_index == spr_playerDown){
+        }else if(sprite_index == spr_playerDown1){
             dash_dir = 270
-        }else if(sprite_index == spr_playerUp){
+        }else if(sprite_index == spr_playerUp1){
             dash_dir = 90
         }
 		
