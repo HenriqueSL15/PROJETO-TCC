@@ -1,6 +1,6 @@
 if(follow != noone){
 	xTo = follow.x
-	yTo = follow.y
+	yTo = follow.y - 44
 }
 
 x += (xTo - x)/25

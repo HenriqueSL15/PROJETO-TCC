@@ -9,7 +9,7 @@ letGo = false
 
 strength = 0
 
-walls = [obj_wall,obj_topWall,obj_bottomWall]
+walls = [obj_wall,obj_topWall,obj_bottomWall,obj_wallUp]
 
 dash_dir = -1;
 dash_vspd = 6;

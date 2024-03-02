@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 6,
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Sprites/Blocks.yy",
+    "name": "Phisical Walls",
+    "path": "folders/Sprites/Blocks/Phisical Walls.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

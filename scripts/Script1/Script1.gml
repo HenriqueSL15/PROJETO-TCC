@@ -9,9 +9,9 @@ var dash_btn = keyboard_check_pressed(ord("X"))
 	//dash
 	if (dash_btn) and dash {
 		
-		if(sprite_index == spr_playerRight){
+		if(sprite_index == spr_playerRight1){
             dash_dir = 0
-        }else if(sprite_index == spr_playerLeft){
+        }else if(sprite_index == spr_playerLeft1){
             dash_dir = 180
         }else if(sprite_index == spr_playerDown1){
             dash_dir = 270

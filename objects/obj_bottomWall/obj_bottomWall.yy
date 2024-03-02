@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Transparent",
-    "path": "folders/Objects/Blocks/Transparent.yy",
+    "path": "folders/Objects/Blocks/Phisical Walls/Transparent.yy",
   },
   "parentObjectId": null,
   "persistent": false,
