@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings": [
+    {"name":"\"fake\" walls","order":8,"path":"folders/Objects/Blocks/\"fake\" walls.yy",},
+    {"name":"Phisical Walls","order":7,"path":"folders/Objects/Blocks/Phisical Walls.yy",},
     {"name":"Transparent","order":2,"path":"folders/Objects/Blocks/Phisical Walls/Transparent.yy",},
     {"name":"backup","order":3,"path":"folders/Sprites/backup.yy",},
-    {"name":"Phisical Walls","order":7,"path":"folders/Objects/Blocks/Phisical Walls.yy",},
-    {"name":"\"fake\" walls","order":8,"path":"folders/Objects/Blocks/\"fake\" walls.yy",},
     {"name":"\"fake\" walls","order":6,"path":"folders/Sprites/Blocks/\"fake\" walls.yy",},
     {"name":"Phisical Walls","order":7,"path":"folders/Sprites/Blocks/Phisical Walls.yy",},
   ],
