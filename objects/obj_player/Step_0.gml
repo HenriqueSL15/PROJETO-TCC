@@ -34,10 +34,6 @@ if(place_meeting(x,y+vspd,walls)){
 
 y = y + vspd
 
-if(instance_place(x,y,obj_bottomWall)){
-	
-}
-
 //ALTERNAR SPRITES
 if(vspd > 0){
 	sprite_index = spr_playerDown
@@ -89,6 +85,8 @@ if(holding){
 		alreadyClicked = true
 	}
 }
+
+
 
 if(letGo){
 	var sword = instance_create_layer(_xx, y - 10, "Shoot", obj_swordSpinning);
