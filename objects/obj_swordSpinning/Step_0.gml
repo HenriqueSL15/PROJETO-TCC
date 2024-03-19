@@ -46,6 +46,7 @@ if(keyboard_check_pressed(ord("C")) && !obj_player.hasSword && stopped){
 show_debug_message(returnDistance)
 
 if(place_meeting(x,y,obj_player) && pickable){
+		obj_player.movable = true;
 		obj_player.alarm[0] = room_speed * 0.75;
 		obj_player.strength = 0
 		obj_player.time = 0

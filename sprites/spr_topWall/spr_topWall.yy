@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_topWall",
-  "bbox_bottom": 15,
+  "bbox_bottom": 7,
   "bbox_left": 0,
   "bbox_right": 31,
   "bbox_top": 0,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Sprites/Blocks.yy",
+    "name": "Phisical Walls",
+    "path": "folders/Sprites/Blocks/Phisical Walls.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

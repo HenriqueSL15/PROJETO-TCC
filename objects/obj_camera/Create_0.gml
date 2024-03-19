@@ -1,5 +1,5 @@
-camWidth = 854
-camHeight = 480
+camWidth = 480
+camHeight = 270
 
 follow = obj_player
 
