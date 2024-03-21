@@ -45,13 +45,14 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"obj_nopc","path":"objects/obj_nopc/obj_nopc.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"obj_nopd","path":"objects/obj_nopd/obj_nopd.yy",},},
     {"id":{"name":"spr_nopc","path":"sprites/spr_nopc/spr_nopc.yy",},},
+    {"id":{"name":"spr_fog","path":"sprites/spr_fog/spr_fog.yy",},},
     {"id":{"name":"obj_downStairs","path":"objects/obj_downStairs/obj_downStairs.yy",},},
     {"id":{"name":"spr_playerUp","path":"sprites/spr_playerUp/spr_playerUp.yy",},},
     {"id":{"name":"Game_2","path":"rooms/Game_2/Game_2.yy",},},
@@ -86,6 +87,7 @@
     {"id":{"name":"spr_playerDown","path":"sprites/spr_playerDown/spr_playerDown.yy",},},
     {"id":{"name":"spr_wallUp","path":"sprites/spr_wallUp/spr_wallUp.yy",},},
     {"id":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},},
+    {"id":{"name":"obj_fog","path":"objects/obj_fog/obj_fog.yy",},},
     {"id":{"name":"obj_wallUp","path":"objects/obj_wallUp/obj_wallUp.yy",},},
     {"id":{"name":"obj_topWall","path":"objects/obj_topWall/obj_topWall.yy",},},
     {"id":{"name":"spr_playerDown1","path":"sprites/spr_playerDown1/spr_playerDown1.yy",},},
@@ -109,8 +111,8 @@
     {"id":{"name":"Game","path":"rooms/Game/Game.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"LOGO","path":"rooms/LOGO/LOGO.yy",},},
     {"roomId":{"name":"Game","path":"rooms/Game/Game.yy",},},
+    {"roomId":{"name":"LOGO","path":"rooms/LOGO/LOGO.yy",},},
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"Game_2","path":"rooms/Game_2/Game_2.yy",},},
   ],

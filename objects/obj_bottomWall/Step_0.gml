@@ -1,5 +1,4 @@
 var isColliding = collision_rectangle(x,y,x + sprite_width,y - sprite_height, obj_player,0,0);
-show_debug_message(x)
 if(isColliding != noone){
 	image_alpha -= addUp;
 }else {

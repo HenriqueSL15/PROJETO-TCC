@@ -8,6 +8,7 @@
     {"name":"Phisical Walls","order":7,"path":"folders/Sprites/Blocks/Phisical Walls.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_fog","order":6,"path":"sprites/spr_fog/spr_fog.yy",},
     {"name":"obj_downStairs","order":2,"path":"objects/obj_downStairs/obj_downStairs.yy",},
     {"name":"spr_playerUp","order":6,"path":"sprites/spr_playerUp/spr_playerUp.yy",},
     {"name":"Game_2","order":3,"path":"rooms/Game_2/Game_2.yy",},
@@ -31,6 +32,7 @@
     {"name":"obj_game","order":4,"path":"objects/obj_game/obj_game.yy",},
     {"name":"spr_playerDown","order":7,"path":"sprites/spr_playerDown/spr_playerDown.yy",},
     {"name":"spr_wallUp","order":1,"path":"sprites/spr_wallUp/spr_wallUp.yy",},
+    {"name":"obj_fog","order":5,"path":"objects/obj_fog/obj_fog.yy",},
     {"name":"obj_wallUp","order":1,"path":"objects/obj_wallUp/obj_wallUp.yy",},
     {"name":"spr_playerTEST","order":1,"path":"sprites/spr_playerTEST/spr_playerTEST.yy",},
     {"name":"spr_quad_strip10","order":5,"path":"sprites/spr_quad_strip10/spr_quad_strip10.yy",},

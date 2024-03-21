@@ -7,6 +7,11 @@ time = 0
 alreadyClicked = false
 letGo = false
 
+fog = [false, noone]
+fogDistance = [[15,13],[25,13]]
+
+var previousMove = hspd;
+
 strength = 0
 
 walls = [obj_wall,obj_topWall,obj_bottomWall,obj_wallUp]
