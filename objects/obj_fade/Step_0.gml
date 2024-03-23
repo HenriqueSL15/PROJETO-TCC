@@ -1,4 +1,4 @@
-if(decreasing){
+if(opacityIsDecreasing){
 	image_alpha -= fadeSpeed;
 }else{
 	image_alpha += fadeSpeed;	
@@ -6,8 +6,10 @@ if(decreasing){
 		room_goto(rm_Menu);
 	}
 }	
+
+
 if(room == LOGO){
-	if(decreasing && image_alpha <= 0){
-		decreasing = false;
+	if(opacityIsDecreasing && image_alpha <= 0){
+		opacityIsDecreasing = false;
 	}
 }

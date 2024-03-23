@@ -35,7 +35,7 @@
     {"name":"obj_fog","order":5,"path":"objects/obj_fog/obj_fog.yy",},
     {"name":"obj_wallUp","order":1,"path":"objects/obj_wallUp/obj_wallUp.yy",},
     {"name":"spr_playerTEST","order":1,"path":"sprites/spr_playerTEST/spr_playerTEST.yy",},
-    {"name":"spr_quad_strip10","order":5,"path":"sprites/spr_quad_strip10/spr_quad_strip10.yy",},
+    {"name":"spr_quad_strip","order":5,"path":"sprites/spr_quad_strip/spr_quad_strip.yy",},
     {"name":"spr_logo","order":2,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"spr_playerLeft","order":8,"path":"sprites/spr_playerLeft/spr_playerLeft.yy",},
     {"name":"spr_altar","order":8,"path":"sprites/spr_altar/spr_altar.yy",},

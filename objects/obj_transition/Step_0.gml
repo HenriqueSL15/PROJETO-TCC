@@ -1,4 +1,3 @@
-
 if(entrando){
 	img+=img_vel
 
