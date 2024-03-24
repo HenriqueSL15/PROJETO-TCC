@@ -130,6 +130,10 @@ if(!holding){
 	}
 }else{
 	//Verifica a força com base no tempo que a tecla foi segurada
+	
+	strength = 2	
+	
+	/*
 	time++
 	if(time > 149)
 		strength = 3
@@ -137,6 +141,7 @@ if(!holding){
 		strength = 2
 	else
 		strength = 1
+	*/
 }
 
 

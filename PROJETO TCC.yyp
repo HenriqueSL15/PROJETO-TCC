@@ -111,8 +111,8 @@
     {"id":{"name":"Game","path":"rooms/Game/Game.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"LOGO","path":"rooms/LOGO/LOGO.yy",},},
     {"roomId":{"name":"Game","path":"rooms/Game/Game.yy",},},
+    {"roomId":{"name":"LOGO","path":"rooms/LOGO/LOGO.yy",},},
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"Game_2","path":"rooms/Game_2/Game_2.yy",},},
   ],
