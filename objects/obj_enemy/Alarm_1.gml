@@ -1,2 +1,2 @@
-dash = false
-spd = 5;
+spd = 0.5;
+dash = false;
