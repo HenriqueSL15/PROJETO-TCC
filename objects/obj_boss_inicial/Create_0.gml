@@ -15,6 +15,7 @@ alvo_dir = 0;
 duracao_ataque = 0.5
 tempo_ataque = duracao_ataque;
 
+
 sprite = sprite_index;
 xscale = 1;
 yscale = 1;
