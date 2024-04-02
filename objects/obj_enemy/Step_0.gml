@@ -1,9 +1,10 @@
-
+//segui personagem
 dir = point_direction(x, y, obj_player.x, obj_player.y)
 hspd = lengthdir_x(spd, dir);
 vspd = lengthdir_y(spd, dir);
 
-
+x += hspd;
+y += vspd;
 
 //colisao
 
@@ -15,7 +16,7 @@ if(place_meeting(x+hspd,y,[obj_wall])){
 	hspd = 0
 }
 
-x += hspd;
+
 
 if(place_meeting(x,y+vspd,[obj_wall])){
 	while(!place_meeting(x,y+sign(vspd),[obj_wall])){
@@ -27,13 +28,3 @@ if(place_meeting(x,y+vspd,[obj_wall])){
 y = y + vspd
 
 }
-
-//dash
-
-
-if(dash == false){
-	alarm[0] = room_speed * 3;
-	dash = true
-	alarm[1] = room_speed * 4;
-}
-

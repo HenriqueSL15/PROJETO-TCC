@@ -1,2 +1,0 @@
-
-desenha_sprite();
