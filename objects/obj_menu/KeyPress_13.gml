@@ -1,5 +1,5 @@
 if(index == 0){
-	room_goto_next();
+	room_goto(Game);
 }else if(index == 1){
 	//CONFIGURAÇÕES
 }else if(index == 2){

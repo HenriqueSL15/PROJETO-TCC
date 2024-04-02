@@ -1,0 +1,1 @@
+colidiComEscada = false
