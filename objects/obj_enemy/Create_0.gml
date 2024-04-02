@@ -6,6 +6,8 @@ vspd = 0;
 movable = true;
 
 //attack
-
 timer = 3 * 60
-dash = true
+dash = false
+dashfim = false
+
+
