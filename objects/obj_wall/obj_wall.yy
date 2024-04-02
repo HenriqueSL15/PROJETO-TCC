@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Phisical Walls",
-    "path": "folders/Objects/Blocks/Phisical Walls.yy",
+    "name": "Blocks",
+    "path": "folders/Objects/Blocks.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -17,13 +17,13 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 630,
+  "height": 32,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8320851f-74ac-4793-a656-c0ef9b6905a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",
@@ -59,8 +59,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 120,
-    "yorigin": 630,
+    "xorigin": 16,
+    "yorigin": 31,
   },
   "swatchColours": [
     4278190335,
@@ -149,5 +149,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 241,
+  "width": 32,
 }

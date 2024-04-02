@@ -1,10 +1,7 @@
-// Tamanho da câmera
-camWidth = 480
-camHeight = 270
+camWidth = 854
+camHeight = 480
 
-// Objeto que deve seguir
 follow = obj_player
 
-// Posições X e Y que ela deve ir atrás
 xTo = x
 yTo = y
