@@ -40,8 +40,8 @@ function state_dash(){
 hspd = lengthdir_x(dash_vspd, dash_dir);
 vspd = lengthdir_y(dash_vspd, dash_dir);
 
-if(place_meeting(x+hspd,y,obj_player.walls)){
-    while(!place_meeting(x+sign(hspd),y,obj_player.walls)){
+if(place_meeting(x+hspd,y,obj_wall)){
+    while(!place_meeting(x+sign(hspd),y,obj_wall)){
         x = x + sign(hspd)
     }
     hspd = 0
@@ -49,8 +49,8 @@ if(place_meeting(x+hspd,y,obj_player.walls)){
 
 x += hspd;
 
-if(place_meeting(x,y+vspd,obj_player.walls)){
-    while(!place_meeting(x,y+sign(vspd),obj_player.walls)){
+if(place_meeting(x,y+vspd,obj_wall)){
+    while(!place_meeting(x,y+sign(vspd),obj_wall)){
         y = y + sign(vspd)
     }
     vspd = 0
