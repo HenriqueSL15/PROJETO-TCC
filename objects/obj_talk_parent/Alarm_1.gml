@@ -1,3 +1,0 @@
-mytext = noone;
-
-
