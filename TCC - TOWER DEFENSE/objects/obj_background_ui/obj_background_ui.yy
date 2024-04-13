@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_background_ui",
-    "path": "sprites/spr_background_ui/spr_background_ui.yy",
+    "name": "spr_game_ui",
+    "path": "sprites/spr_game_ui/spr_game_ui.yy",
   },
   "spriteMaskId": null,
   "visible": true,
