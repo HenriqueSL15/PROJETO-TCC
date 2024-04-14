@@ -35,7 +35,9 @@
   },
   "resources": [
     {"id":{"name":"obj_background_ui","path":"objects/obj_background_ui/obj_background_ui.yy",},},
+    {"id":{"name":"obj_base_card","path":"objects/obj_base_card/obj_base_card.yy",},},
     {"id":{"name":"spr_game_ui","path":"sprites/spr_game_ui/spr_game_ui.yy",},},
+    {"id":{"name":"spr_base_card","path":"sprites/spr_base_card/spr_base_card.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
     {"id":{"name":"obj_grass","path":"objects/obj_grass/obj_grass.yy",},},
     {"id":{"name":"GAME1","path":"rooms/GAME1/GAME1.yy",},},
