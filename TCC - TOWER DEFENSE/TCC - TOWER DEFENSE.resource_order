@@ -17,9 +17,16 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_lightning_card","order":6,"path":"objects/obj_lightning_card/obj_lightning_card.yy",},
+    {"name":"obj_fire_ball_card","order":3,"path":"objects/obj_fire_ball_card/obj_fire_ball_card.yy",},
     {"name":"obj_base_card","order":2,"path":"objects/obj_base_card/obj_base_card.yy",},
+    {"name":"spr_fire_ball_explosion","order":3,"path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},
+    {"name":"spr_lightning","order":6,"path":"sprites/spr_lightning/spr_lightning.yy",},
     {"name":"spr_base_card","order":2,"path":"sprites/spr_base_card/spr_base_card.yy",},
+    {"name":"spr_fire_ball_card","order":5,"path":"sprites/spr_fire_ball_card/spr_fire_ball_card.yy",},
+    {"name":"spr_lightning_card","order":7,"path":"sprites/spr_lightning_card/spr_lightning_card.yy",},
     {"name":"spr_grass","order":1,"path":"sprites/spr_grass/spr_grass.yy",},
-    {"name":"obj_grass","order":1,"path":"objects/obj_grass/obj_grass.yy",},
+    {"name":"obj_spawn_cards","order":5,"path":"objects/obj_spawn_cards/obj_spawn_cards.yy",},
+    {"name":"obj_ground1","order":1,"path":"objects/obj_ground1/obj_ground1.yy",},
   ],
 }

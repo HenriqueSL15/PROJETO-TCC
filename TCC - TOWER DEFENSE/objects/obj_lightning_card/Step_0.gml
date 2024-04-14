@@ -4,8 +4,11 @@ if (!drag) {
 		x = x_padrao
 		y = y_padrao
 	}else{
-	// Deleta a carta(por enquanto) caso seja uma posição válida
-	instance_destroy()
+	// Troca a sprite da carta
+		if(sprite_index != spr_lightning){
+			sprite_index = spr_lightning
+			canBeDraged = false
+		}
 	}
 }else{
 	// Arrasta a carta

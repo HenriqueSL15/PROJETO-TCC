@@ -4,8 +4,11 @@ if (!drag) {
 		x = x_padrao
 		y = y_padrao
 	}else{
-	// Deleta a carta(por enquanto) caso seja uma posição válida
-	instance_destroy()
+	// Troca a sprite da carta
+		if(sprite_index != spr_fire_ball_explosion){
+			sprite_index = spr_fire_ball_explosion
+			canBeDraged = false
+		}
 	}
 }else{
 	// Arrasta a carta
