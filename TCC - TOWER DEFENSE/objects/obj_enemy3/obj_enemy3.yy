@@ -10,8 +10,8 @@
     "path": "folders/Objects/INIMIGOS.yy",
   },
   "parentObjectId": {
-    "name": "obj_spawn",
-    "path": "objects/obj_spawn/obj_spawn.yy",
+    "name": "obj_spawn_2",
+    "path": "objects/obj_spawn_2/obj_spawn_2.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
