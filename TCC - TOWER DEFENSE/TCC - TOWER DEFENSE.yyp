@@ -28,6 +28,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"inimigos","folderPath":"folders/Sprites/inimigos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"INIMIGOS","folderPath":"folders/Objects/INIMIGOS.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"inimigos","folderPath":"folders/Sprites/inimigos.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

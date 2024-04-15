@@ -17,6 +17,8 @@
     {"name":"inimigos","order":9,"path":"folders/Sprites/inimigos.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"INIMIGOS","order":8,"path":"folders/Objects/INIMIGOS.yy",},
+    {"name":"inimigos","order":9,"path":"folders/Sprites/inimigos.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_linha","order":7,"path":"objects/obj_linha/obj_linha.yy",},
