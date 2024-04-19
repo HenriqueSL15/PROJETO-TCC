@@ -1,5 +1,5 @@
 randomize()
-card = choose(obj_sword_card)
+card = choose(obj_shield_card,obj_fire_ball_card,obj_sword_card)
 if(cardsSpawned < 3){
 	instance_create_layer(xx[cardsSpawned],yy,"HABILIDADES", card)
 	cardsSpawned++
