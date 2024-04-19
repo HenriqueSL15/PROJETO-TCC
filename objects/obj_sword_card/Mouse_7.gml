@@ -7,4 +7,3 @@ if(mouse_y > 454 && mouse_y < 664){
 	y = 125
 }
 event_inherited();
-
