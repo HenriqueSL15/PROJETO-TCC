@@ -1,5 +1,5 @@
 if (sprite_index == spr_shield){
-	if (i < 180) {
+	if (i < 60) {
 		i++
 	}else{
 		i = 0

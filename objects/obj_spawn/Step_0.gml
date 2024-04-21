@@ -5,6 +5,12 @@ if(enemiesSpawned < 3){
 	enemiesSpawned++
 }
 
+if(enemiesSpawned == 3){
+	if(!instance_exists(obj_enemy) && !instance_exists(obj_enemy2) && !instance_exists(obj_enemy3)){
+		enemiesSpawned = 0
+	}
+}
+
 /*
 x = x - vspd
 

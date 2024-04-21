@@ -1,1 +1,1 @@
-show_debug_message(instance_number(obj_base_card))
+InventoryAdd(obj_inventory.id,irandom(2))
