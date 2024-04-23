@@ -1,5 +1,6 @@
-if(!drag){
-	if(other.numeracao >= 1 && other.numeracao <= 5){
+var my = mouse_y
+if(other.numeracao >= 1 && other.numeracao <= 5){
+	show_debug_message("Entre 1 e 5")
 		y = 655
 		if (other.numeracao == 1){
 			x = x1
@@ -13,6 +14,7 @@ if(!drag){
 			x = x1 + (incremento * 4)
 		}
 	}else if(other.numeracao > 5 && other.numeracao <= 10){
+		show_debug_message("Entre 5 e 10")
 		y = 430
 		if (other.numeracao == 6){
 			x = x1
@@ -25,9 +27,10 @@ if(!drag){
 		} else if (other.numeracao == 10){
 			x = x1 + (incremento * 4)
 		}
-	}else{
+	}else if(other.numeracao > 10){
+		show_debug_message("Entre 5 e 10")
 		y = 205
-		if (other.numeracao == 10){
+		if (other.numeracao == 11){
 			x = x1
 		}else if (other.numeracao == 12){
 			x = x1 + incremento
@@ -39,4 +42,3 @@ if(!drag){
 			x = x1 + (incremento * 4)
 		}
 	}
-}
