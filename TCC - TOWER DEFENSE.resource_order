@@ -19,6 +19,7 @@
     {"name":"obj_spawn_cards","order":5,"path":"objects/obj_spawn_cards/obj_spawn_cards.yy",},
     {"name":"obj_spawn","order":3,"path":"objects/obj_spawn/obj_spawn.yy",},
     {"name":"obj_sword_card","order":4,"path":"objects/obj_sword_card/obj_sword_card.yy",},
+    {"name":"obj_enemyFather","order":4,"path":"objects/obj_enemyFather/obj_enemyFather.yy",},
     {"name":"spr_base_card","order":2,"path":"sprites/spr_base_card/spr_base_card.yy",},
     {"name":"spr_cards","order":16,"path":"sprites/spr_cards/spr_cards.yy",},
     {"name":"spr_enemy2","order":1,"path":"sprites/spr_enemy2/spr_enemy2.yy",},

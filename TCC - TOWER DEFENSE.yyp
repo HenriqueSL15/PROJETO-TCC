@@ -55,6 +55,7 @@
     {"id":{"name":"obj_spawn_cards","path":"objects/obj_spawn_cards/obj_spawn_cards.yy",},},
     {"id":{"name":"obj_spawn","path":"objects/obj_spawn/obj_spawn.yy",},},
     {"id":{"name":"obj_sword_card","path":"objects/obj_sword_card/obj_sword_card.yy",},},
+    {"id":{"name":"obj_enemyFather","path":"objects/obj_enemyFather/obj_enemyFather.yy",},},
     {"id":{"name":"GAME1","path":"rooms/GAME1/GAME1.yy",},},
     {"id":{"name":"InventoryFunctions","path":"scripts/InventoryFunctions/InventoryFunctions.yy",},},
     {"id":{"name":"spr_base_card","path":"sprites/spr_base_card/spr_base_card.yy",},},

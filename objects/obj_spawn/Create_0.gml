@@ -6,7 +6,7 @@ timer = 0;
 
 yy = [620, 390, 150]
 
-xx = 1540
+xx = 1455
 
 avaibleCards = [obj_enemy, obj_enemy2, obj_enemy3]
 

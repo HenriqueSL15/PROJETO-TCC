@@ -1,13 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy3",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_fire_ball_card","path":"objects/obj_fire_ball_card/obj_fire_ball_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_sword_card","path":"objects/obj_sword_card/obj_sword_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_shield_card","path":"objects/obj_shield_card/obj_shield_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_enemy3",
   "overriddenProperties":[],
@@ -15,7 +9,10 @@
     "name":"INIMIGOS",
     "path":"folders/Objects/INIMIGOS.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemyFather",
+    "path":"objects/obj_enemyFather/obj_enemyFather.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
