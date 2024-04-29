@@ -1,0 +1,1 @@
+InventoryAdd(obj_inventory.id,irandom(4))
