@@ -4,9 +4,9 @@ vspd = 0;
 timer = 0;
 //valorEnemy = irandom(2);
 
-yy = [620, 390, 150]
+yy = [445, 330, 220]
 
-xx = 1455
+xx = 1397
 
 avaibleCards = [obj_enemy, obj_enemy2, obj_enemy3]
 
