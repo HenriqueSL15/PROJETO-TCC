@@ -1,5 +1,6 @@
 canCount = false
-
-if(other.i == 60){
+other.i++
+if(other.i == 120){
 	canCount = true
+	instance_destroy(other)
 }

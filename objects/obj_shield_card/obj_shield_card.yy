@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shield_card",
-    "path":"sprites/spr_shield_card/spr_shield_card.yy",
+    "name":"spr_shield",
+    "path":"sprites/spr_shield/spr_shield.yy",
   },
   "spriteMaskId":null,
   "visible":true,
