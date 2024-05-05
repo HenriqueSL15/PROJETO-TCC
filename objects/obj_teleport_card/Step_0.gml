@@ -7,11 +7,11 @@ if(sprite_index != spr_teleporter){
 if(place_meeting(x,y,obj_spawn)){
 	obj_spawn.life --;
 }
-x+=spd	
+//x+=spd	
 
 
 
 
 
 valor = 1;
-x+= 1;
+x+= 20;

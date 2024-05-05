@@ -68,6 +68,9 @@ stateDrag = function () {
 			}else if(itemDrag == 4){
 				InventoryRemove(obj_inventory.id,4)
 					instance_create_layer(290,mouse_y,"HABILIDADES",obj_teleport_card)	
+			}else if(itemDrag == 5){
+				InventoryRemove(obj_inventory.id,5)
+				instance_create_layer(mouse_x,mouse_y,"HABILIDAES",obj_onion_shield_card)
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
