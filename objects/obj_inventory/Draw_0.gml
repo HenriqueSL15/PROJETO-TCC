@@ -3,5 +3,6 @@ for(var i = 0; i < INVENTORY_SLOTS; i += 1){
 	var yy = y + (i div rowLength) * 150 + 2
 	if (inventory[i] != -1) {
 		draw_sprite(spr_items, inventory[i],xx,yy)
+		//draw_sprite_stretched(spr_items, inventory[i], xx, yy,200,200);
 	}
 }

@@ -1,3 +1,3 @@
-vspd = 1;
-life = 1
-isColliding = false
+ticks = 100
+event_inherited();
+

@@ -1,7 +1,6 @@
-var my = mouse_y
-if(other.numeracao >= 1 && other.numeracao <= 5){
-	show_debug_message("Entre 1 e 5")
-		y = 655
+if(collision == false){
+	if(other.numeracao >= 1 && other.numeracao <= 5){
+		show_debug_message("Entre 1 e 5")
 		if (other.numeracao == 1){
 			x = x1
 		}else if (other.numeracao == 2){
@@ -15,7 +14,6 @@ if(other.numeracao >= 1 && other.numeracao <= 5){
 		}
 	}else if(other.numeracao > 5 && other.numeracao <= 10){
 		show_debug_message("Entre 5 e 10")
-		y = 430
 		if (other.numeracao == 6){
 			x = x1
 		}else if (other.numeracao == 7){
@@ -29,7 +27,6 @@ if(other.numeracao >= 1 && other.numeracao <= 5){
 		}
 	}else if(other.numeracao > 10){
 		show_debug_message("Entre 5 e 10")
-		y = 205
 		if (other.numeracao == 11){
 			x = x1
 		}else if (other.numeracao == 12){
@@ -42,3 +39,5 @@ if(other.numeracao >= 1 && other.numeracao <= 5){
 			x = x1 + (incremento * 4)
 		}
 	}
+	collision = true
+}

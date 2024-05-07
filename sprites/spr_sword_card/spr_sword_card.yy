@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"25903696-4023-4f21-bc87-cead3aaafa37","name":"25903696-4023-4f21-bc87-cead3aaafa37","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c3a2f3a3-74e9-4a5a-aada-f241ce808af5","name":"c3a2f3a3-74e9-4a5a-aada-f241ce808af5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":194,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d1da712b-8701-4235-9fdb-a771ba41a70c","blendMode":0,"displayName":"default","isLocked":false,"name":"d1da712b-8701-4235-9fdb-a771ba41a70c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"31afcda5-b8ba-4bed-a027-eca4f1bc3543","blendMode":0,"displayName":"default","isLocked":false,"name":"31afcda5-b8ba-4bed-a027-eca4f1bc3543","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_sword_card",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25903696-4023-4f21-bc87-cead3aaafa37","path":"sprites/spr_sword_card/spr_sword_card.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bbfd9e89-ef8d-4f24-8266-4ed82d233eac","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3a2f3a3-74e9-4a5a-aada-f241ce808af5","path":"sprites/spr_sword_card/spr_sword_card.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1337a9e8-5b94-4611-8508-cab30c0d25a0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":64,
-    "yorigin":160,
+    "yorigin":242,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
