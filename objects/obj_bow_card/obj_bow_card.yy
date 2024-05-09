@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rectangle",
-    "path":"sprites/spr_rectangle/spr_rectangle.yy",
+    "name":"spr_bow_card",
+    "path":"sprites/spr_bow_card/spr_bow_card.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_enemy2",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":117,
   "bbox_left":2,
   "bbox_right":127,
-  "bbox_top":9,
+  "bbox_top":39,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
