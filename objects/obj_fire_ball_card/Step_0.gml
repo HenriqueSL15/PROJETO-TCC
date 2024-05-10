@@ -6,9 +6,9 @@ if (!drag) {
 	}else{
 		// Troca a sprite da carta
 		if(sprite_index == spr_fire_ball_card){
-			sprite_index = spr_test
+			sprite_index = spr_fire_ball_attack12
 		}else if(sprite_index != spr_fire_ball_explosion){
-			if (i < 60) {	
+			if (i < 90) {	
 				i++
 			}else{
 				sprite_index = spr_fire_ball_explosion

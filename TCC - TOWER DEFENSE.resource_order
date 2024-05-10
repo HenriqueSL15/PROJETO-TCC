@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"cards","order":5,"path":"folders/Objects/cards.yy",},
+    {"name":"Bola de fogo","order":30,"path":"folders/Sprites/Bola de fogo.yy",},
     {"name":"inimigos","order":1,"path":"folders/Sprites/inimigos.yy",},
   ],
   "ResourceOrderSettings":[
@@ -42,6 +43,18 @@
     {"name":"spr_enemy_box","order":3,"path":"sprites/spr_enemy_box/spr_enemy_box.yy",},
     {"name":"spr_enemy2","order":1,"path":"sprites/spr_enemy2/spr_enemy2.yy",},
     {"name":"spr_enemy3","order":2,"path":"sprites/spr_enemy3/spr_enemy3.yy",},
+    {"name":"spr_fire_ball_attack10","order":31,"path":"sprites/spr_fire_ball_attack10/spr_fire_ball_attack10.yy",},
+    {"name":"spr_fire_ball_attack11","order":32,"path":"sprites/spr_fire_ball_attack11/spr_fire_ball_attack11.yy",},
+    {"name":"spr_fire_ball_attack12","order":33,"path":"sprites/spr_fire_ball_attack12/spr_fire_ball_attack12.yy",},
+    {"name":"spr_fire_ball_attack13","order":34,"path":"sprites/spr_fire_ball_attack13/spr_fire_ball_attack13.yy",},
+    {"name":"spr_fire_ball_attack2","order":9,"path":"sprites/spr_fire_ball_attack2/spr_fire_ball_attack2.yy",},
+    {"name":"spr_fire_ball_attack3","order":10,"path":"sprites/spr_fire_ball_attack3/spr_fire_ball_attack3.yy",},
+    {"name":"spr_fire_ball_attack4","order":3,"path":"sprites/spr_fire_ball_attack4/spr_fire_ball_attack4.yy",},
+    {"name":"spr_fire_ball_attack5","order":4,"path":"sprites/spr_fire_ball_attack5/spr_fire_ball_attack5.yy",},
+    {"name":"spr_fire_ball_attack6","order":5,"path":"sprites/spr_fire_ball_attack6/spr_fire_ball_attack6.yy",},
+    {"name":"spr_fire_ball_attack7","order":6,"path":"sprites/spr_fire_ball_attack7/spr_fire_ball_attack7.yy",},
+    {"name":"spr_fire_ball_attack8","order":7,"path":"sprites/spr_fire_ball_attack8/spr_fire_ball_attack8.yy",},
+    {"name":"spr_fire_ball_attack9","order":8,"path":"sprites/spr_fire_ball_attack9/spr_fire_ball_attack9.yy",},
     {"name":"spr_fire_ball_card","order":5,"path":"sprites/spr_fire_ball_card/spr_fire_ball_card.yy",},
     {"name":"spr_fire_ball_explosion","order":4,"path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},
     {"name":"spr_grass","order":2,"path":"sprites/spr_grass/spr_grass.yy",},
@@ -63,6 +76,5 @@
     {"name":"spr_sword","order":13,"path":"sprites/spr_sword/spr_sword.yy",},
     {"name":"spr_teleport_card","order":21,"path":"sprites/spr_teleport_card/spr_teleport_card.yy",},
     {"name":"spr_teleporter","order":22,"path":"sprites/spr_teleporter/spr_teleporter.yy",},
-    {"name":"spr_test","order":30,"path":"sprites/spr_test/spr_test.yy",},
   ],
 }

@@ -1,6 +1,6 @@
 if (hit){
 	sprite_index = spr_mago_hit
-	screenshake(1)	
+	screenshake(10)	
 	a = 0
 	hit = false
 }else{
