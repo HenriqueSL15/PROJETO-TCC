@@ -6,13 +6,13 @@ if (!drag) {
 	}else{
 		// Troca a sprite da carta
 		if(sprite_index == spr_fire_ball_card){
-			sprite_index = spr_fire_ball_attack12
-		}else if(sprite_index != spr_fire_ball_explosion){
-			if (i < 90) {	
+			sprite_index = spr_fire_ball_attack
+		}else if(sprite_index != spr_fire_ball_card){
+			if (i < 30) {	
 				i++
 			}else{
-				sprite_index = spr_fire_ball_explosion
-				x = x - 32
+				sprite_index = spr_fire_ball_attack
+				//x = x - 32
 				i = 0
 			}
 			canBeDraged = false

@@ -3,7 +3,6 @@
 dano = 1
 spd = 10
 destroyer = true
-a = 0
 b = 0
 xa = 0
 // Inherit the parent event

@@ -1,3 +1,5 @@
-ticks = 80
+ticks = 120
+a = 0
+life = 1
 event_inherited();
 

@@ -1,7 +1,10 @@
 randomize()
-enemy = choose(obj_enemy,obj_enemy2,obj_enemy3)
+enemy = choose(obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer)
 if(enemiesSpawned < 3){
-	instance_create_layer(xx,yy[enemiesSpawned],"INIMIGOS", enemy)
+	var inimigo = instance_create_layer(xx,yy[enemiesSpawned],"INIMIGOS", enemy)
+	var hpBar = instance_create_layer(xx-100,yy[enemiesSpawned]-90, "INIMIGOS", obj_hpBar)
+	hpBar.indice = enemiesSpawned
+	hpBar.enemyType = inimigo
 	enemiesSpawned++
 }
 

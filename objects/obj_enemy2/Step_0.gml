@@ -1,7 +1,14 @@
 if(life > 0){
+	if(instance_exists(obj_wikipedia)){
+		canCount = false
+	}else if(!instance_exists(obj_wikipedia) && canCount){
+		canCount = true
+	}
 	if(a < ticks){
 		if(canCount){
 			a++
+		}else{
+			sprite_index = spr_enemy	
 		}
 	}else{
 		if(x == pos[0]){
@@ -16,12 +23,13 @@ if(life > 0){
 		
 	if (x == pos[4]){
 		ticks = 30
-		obj_mago.vida -= 1
+		obj_mago.vida -= 2
 		obj_mago.hit = true
 		sprite_index = spr_enemy_attacking
 		show_debug_message(obj_mago.vida)
 	}else{
-		ticks = 100
+		sprite_index = spr_enemy
+		ticks = 140
 	}
 
 	a = 0

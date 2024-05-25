@@ -1,6 +1,7 @@
 canCount = true
-life = 1
 isColliding = false
+
+life = 1
 
 dano = 1
 

@@ -5,5 +5,6 @@ if(!other.drag){
 		x = other.x + 70
 	}else{
 		x = pos[0]
+		canCount = true
 	}
 }

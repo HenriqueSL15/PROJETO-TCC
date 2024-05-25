@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":8,
   "parent":{
-    "name":"Bola de fogo",
-    "path":"folders/Sprites/Bola de fogo.yy",
+    "name":"padrões de ataque à longa distância",
+    "path":"folders/Sprites/padrões de ataque à longa distância.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
