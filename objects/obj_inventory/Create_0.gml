@@ -2,6 +2,9 @@
 rowLength = 7
 inventory = array_create(INVENTORY_SLOTS, -1)
 randomize()
-inventory[2] = 0
-inventory[3] = 1
-inventory[4] = 2
+inventory[0] = 0
+inventory[1] = 1
+inventory[2] = 2
+inventory[3] = 3
+inventory[4] = 4
+inventory[5] = 5

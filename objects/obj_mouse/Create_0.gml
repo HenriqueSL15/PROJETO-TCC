@@ -71,13 +71,13 @@ stateDrag = function () {
 				instance_create_layer(290,yy,"HABILIDADES",obj_sword_card)	
 			}else if(itemDrag == 3){
 				InventoryRemove(obj_inventory.id,3)
-				instance_create_layer(mouse_x,yy,"HABILIDADES",obj_teleport_card)
+				instance_create_layer(510,yy,"HABILIDADES",obj_teleport_card)
 			}else if(itemDrag == 4){
 				InventoryRemove(obj_inventory.id,4)
 				instance_create_layer(964,yy,"HABILIDADES",obj_bow_card)
 			}else if(itemDrag == 5){
 				InventoryRemove(obj_inventory.id,5)
-				instance_create_layer(958,307,"HABILIDADES",obj_disc_card)
+				instance_create_layer(972,325,"HABILIDADES",obj_disc_card)
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
