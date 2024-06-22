@@ -60,9 +60,24 @@ stateDrag = function () {
 			}else{
 				yy = 180
 			}
+			
+			if(mouse_y > 353 && mouse_y < 465){
+				yy = 406
+			}else if(mouse_y < 350 && mouse_y > 238){
+				yy = 290
+			}else{
+				yy = 180
+			}
+			
+			if(instance_position(mouse_x,mouse_y,obj_light)){
+				var ID = instance_position(mouse_x,mouse_y,obj_light)	
+			}
+			
 			if(itemDrag == 0){
 				InventoryRemove(obj_inventory.id,0)
-				instance_create_layer(mouse_x,yy,"HABILIDADES",obj_fire_ball_card)
+				var fireball = instance_create_layer(135,96,"HABILIDADES",obj_fire_ball_card)
+				fireball.otherObject = ID
+				fireball.newY = yy
 			}else if(itemDrag == 1){
 				InventoryRemove(obj_inventory.id,1)
 				instance_create_layer(mouse_x,yy,"HABILIDADES",obj_shield_card)	

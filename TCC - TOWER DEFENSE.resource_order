@@ -1,10 +1,12 @@
 {
   "FolderOrderSettings":[
     {"name":"cards","order":5,"path":"folders/Objects/cards.yy",},
+    {"name":"Paletas de cores","order":22,"path":"folders/Objects/Paletas de cores.yy",},
     {"name":"Bola de fogo","order":30,"path":"folders/Sprites/Bola de fogo.yy",},
     {"name":"cards","order":39,"path":"folders/Sprites/cards.yy",},
     {"name":"inimigos","order":1,"path":"folders/Sprites/inimigos.yy",},
     {"name":"padrões de ataque à longa distância","order":31,"path":"folders/Sprites/padrões de ataque à longa distância.yy",},
+    {"name":"Paletas de cores","order":44,"path":"folders/Sprites/Paletas de cores.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_abc","order":12,"path":"objects/obj_abc/obj_abc.yy",},
@@ -42,7 +44,9 @@
     {"name":"obj_wikipedia_book","order":19,"path":"objects/obj_wikipedia_book/obj_wikipedia_book.yy",},
     {"name":"obj_wikipedia","order":18,"path":"objects/obj_wikipedia/obj_wikipedia.yy",},
     {"name":"ScreenShake","order":1,"path":"scripts/ScreenShake/ScreenShake.yy",},
-    {"name":"abc","order":18,"path":"sprites/abc/abc.yy",},
+    {"name":"spr_background_blue","order":3,"path":"sprites/spr_background_blue/spr_background_blue.yy",},
+    {"name":"spr_background_default","order":1,"path":"sprites/spr_background_default/spr_background_default.yy",},
+    {"name":"spr_background_red","order":2,"path":"sprites/spr_background_red/spr_background_red.yy",},
     {"name":"spr_base_card_1_1","order":5,"path":"sprites/spr_base_card_1_1/spr_base_card_1_1.yy",},
     {"name":"spr_base_card_1","order":19,"path":"sprites/spr_base_card_1/spr_base_card_1.yy",},
     {"name":"spr_base_card_2_1","order":6,"path":"sprites/spr_base_card_2_1/spr_base_card_2_1.yy",},
@@ -93,6 +97,7 @@
     {"name":"spr_mago","order":9,"path":"sprites/spr_mago/spr_mago.yy",},
     {"name":"spr_rectangle_disc","order":41,"path":"sprites/spr_rectangle_disc/spr_rectangle_disc.yy",},
     {"name":"spr_rectangle","order":26,"path":"sprites/spr_rectangle/spr_rectangle.yy",},
+    {"name":"spr_red","order":4,"path":"sprites/spr_red/spr_red.yy",},
     {"name":"spr_shield_1","order":3,"path":"sprites/spr_shield_1/spr_shield_1.yy",},
     {"name":"spr_shield_card","order":14,"path":"sprites/spr_shield_card/spr_shield_card.yy",},
     {"name":"spr_shield","order":15,"path":"sprites/spr_shield/spr_shield.yy",},
@@ -105,7 +110,5 @@
     {"name":"spr_teleporter_loop","order":43,"path":"sprites/spr_teleporter_loop/spr_teleporter_loop.yy",},
     {"name":"spr_teleporter","order":22,"path":"sprites/spr_teleporter/spr_teleporter.yy",},
     {"name":"spr_wikipedia_book","order":35,"path":"sprites/spr_wikipedia_book/spr_wikipedia_book.yy",},
-    {"name":"Sprite54","order":37,"path":"sprites/Sprite54/Sprite54.yy",},
-    {"name":"Sprite55","order":38,"path":"sprites/Sprite55/Sprite55.yy",},
   ],
 }

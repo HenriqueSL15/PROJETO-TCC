@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wikipedia_book",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_red",
+  "eventList":[],
   "managed":true,
-  "name":"obj_wikipedia_book",
+  "name":"obj_red",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Paletas de cores",
+    "path":"folders/Objects/Paletas de cores.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wikipedia_book",
-    "path":"sprites/spr_wikipedia_book/spr_wikipedia_book.yy",
+    "name":"spr_red",
+    "path":"sprites/spr_red/spr_red.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"abc",
-    "path":"sprites/abc/abc.yy",
+    "name":"spr_background_default",
+    "path":"sprites/spr_background_default/spr_background_default.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,11 +1,64 @@
 if (!drag) {
-	// Reseta a posição da carta caso seja um local inválido
-	if (x + (sprite_width / 2) <= 284 || y >= 672) {
-		x = x_padrao
-		y = y_padrao
-	}else{
+		if(place_meeting(x,y,obj_spawn)){
+			obj_spawn.life --;
+		}
+
+
+		if(collision == false){
+		if(otherObject.numeracao >= 1 && otherObject.numeracao <= 5){
+			//show_debug_message("Entre 1 e 5")
+			if (otherObject.numeracao == 1){
+				newX = x1
+			}else if (otherObject.numeracao == 2){
+				newX = x1 + incremento
+			} else if (otherObject.numeracao == 3){
+				newX = x1 + (incremento * 2)
+			} else if (otherObject.numeracao == 4){
+				newX = x1 + (incremento * 3)
+			} else if (otherObject.numeracao == 5){
+				newX = x1 + (incremento * 4)
+			}
+		}else if(otherObject.numeracao > 5 && otherObject.numeracao <= 10){
+			//show_debug_message("Entre 5 e 10")
+			if (otherObject.numeracao == 6){
+				newX = x1
+			}else if (otherObject.numeracao == 7){
+				newX = x1 + incremento
+			} else if (otherObject.numeracao == 8){
+				newX = x1 + (incremento * 2)
+			} else if (otherObject.numeracao == 9){
+				newX = x1 + (incremento * 3)
+			} else if (otherObject.numeracao == 10){
+				newX = x1 + (incremento * 4)
+			}
+		}else if(otherObject.numeracao > 10){
+			//show_debug_message("Entre 10 e 15")
+			if (otherObject.numeracao == 11){
+				newX = x1
+			}else if (otherObject.numeracao == 12){
+				newX = x1 + incremento
+			} else if (otherObject.numeracao == 13){
+				newX = x1 + (incremento * 2)
+			} else if (otherObject.numeracao == 14){
+				newX = x1 + (incremento * 3)
+			} else if (otherObject.numeracao == 15){
+				newX = x1 + (incremento * 4)
+			}
+		}
+		}
+		direction = radtodeg(arctan2(y - newY, newX - x))
+		
+		if(point_distance(x,y,newX,newY) > 20){
+			stopped = false
+			x += lengthdir_x(20,direction)
+			y += lengthdir_y(20,direction)
+		}else{
+			stopped = true
+			image_angle = 0
+		}
+		
 		// Troca a sprite da carta
-		if(sprite_index == spr_fire_ball_card){
+		if(sprite_index == spr_fire_ball_card && stopped){
 			sprite_index = spr_fire_ball_attack
 		}else if(sprite_index != spr_fire_ball_card){
 			if (i < 30) {	
@@ -18,11 +71,8 @@ if (!drag) {
 			canBeDraged = false
 		}
 		
-		if(place_meeting(x,y,obj_spawn)){
-			obj_spawn.life --;
-		}
-
-	}
+		
+	
 }else{
 	// Arrasta a carta
 	x = mouse_x + xx;
