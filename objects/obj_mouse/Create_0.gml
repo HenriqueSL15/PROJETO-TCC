@@ -93,6 +93,11 @@ stateDrag = function () {
 			}else if(itemDrag == 5){
 				InventoryRemove(obj_inventory.id,5)
 				instance_create_layer(972,325,"HABILIDADES",obj_disc_card)
+			}else if(itemDrag == 6){
+				InventoryRemove(obj_inventory.id,6)
+				var poison = instance_create_layer(135,96,"HABILIDADES",obj_poison_card)
+				poison.otherObject = ID
+				poison.newY = yy
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
