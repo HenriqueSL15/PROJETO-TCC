@@ -13,9 +13,8 @@ if(life > 0){
 		}
 		
 	if (x == pos[3]){
-		ticks = 10
-		obj_mago.vida -= 1
-		obj_mago.hit = true
+		ticks = 40
+		instance_create_layer(x,y-90,"habilidades",obj_flecha)
 		//sprite_ipndex = spr_enemy_attacking
 		show_debug_message(obj_mago.vida)
 	}else{
