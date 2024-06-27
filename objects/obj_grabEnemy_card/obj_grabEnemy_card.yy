@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_poison_card",
+  "%Name":"obj_grabEnemy_card",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_light_5","path":"objects/obj_light_5/obj_light_5.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_poison_card",
+  "name":"obj_grabEnemy_card",
   "overriddenProperties":[],
   "parent":{
     "name":"cards",
     "path":"folders/Objects/cards.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_base_card",
+    "path":"objects/obj_base_card/obj_base_card.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_poison_card",
-    "path":"sprites/spr_poison_card/spr_poison_card.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

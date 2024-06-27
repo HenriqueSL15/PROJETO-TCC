@@ -1,2 +1,0 @@
-
-destroyer = false

@@ -14,10 +14,7 @@
     "name":"cards",
     "path":"folders/Objects/cards.yy",
   },
-  "parentObjectId":{
-    "name":"obj_base_card_4",
-    "path":"objects/obj_base_card_4/obj_base_card_4.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

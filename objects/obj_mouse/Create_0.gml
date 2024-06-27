@@ -1,3 +1,4 @@
+enemyID = 0
 inventoryHover = -1
 slotHover = -1
 inventoryDrag = -1
@@ -73,6 +74,12 @@ stateDrag = function () {
 				var ID = instance_position(mouse_x,mouse_y,obj_light)	
 			}
 			
+			if(instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer])){
+				enemyID = instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer])
+			}else {
+				enemyID = 0	
+			}
+			
 			if(itemDrag == 0){
 				InventoryRemove(obj_inventory.id,0)
 				var fireball = instance_create_layer(135,96,"HABILIDADES",obj_fire_ball_card)
@@ -98,6 +105,25 @@ stateDrag = function () {
 				var poison = instance_create_layer(135,96,"HABILIDADES",obj_poison_card)
 				poison.otherObject = ID
 				poison.newY = yy
+			}else if(itemDrag == 7){
+				if (instance_number(obj_grabEnemy_card) < 1){
+					if (enemyID != 0){
+						var grabEnemy = instance_create_layer(mouse_x,mouse_y,"HABILIDADES",obj_grabEnemy_card)
+						grabEnemy.otherObject = enemyID
+						InventoryAdd(obj_inventory.id,7)
+						InventoryRemove(obj_inventory.id,7)
+					}
+				}else{
+					InventoryRemove(obj_inventory.id,7)
+					var grabEnemy = obj_grabEnemy_card.id
+					grabEnemy.otherObject = ID
+					grabEnemy.level = 2
+					grabEnemy.image_angle = grabEnemy.angle
+					grabEnemy.x = 135
+					grabEnemy.y = 96
+					grabEnemy.newY = yy	+ 60
+					grabEnemy.image_alpha = 1
+				}
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)

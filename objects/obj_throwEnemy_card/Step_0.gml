@@ -2,7 +2,6 @@ if (!drag) {
 		if(place_meeting(x,y,obj_spawn)){
 			obj_spawn.life --;
 		}
-
 		if(collision == false){
 		if(otherObject.numeracao >= 1 && otherObject.numeracao <= 5){
 			//show_debug_message("Entre 1 e 5")
@@ -55,15 +54,15 @@ if (!drag) {
 			stopped = true
 			image_angle = 0
 		}
-		
+
 		// Troca a sprite da carta
-		if(sprite_index == spr_fire_ball_card && stopped){
-			sprite_index = spr_fire_ball_attack
+		if(sprite_index == spr_grabEnemy_card){
+			sprite_index = spr_grabEnemy_card
 		}else if(sprite_index != spr_fire_ball_card){
 			if (i < 30) {	
 				i++
 			}else{
-				sprite_index = spr_fire_ball_attack
+				sprite_index = spr_grabEnemy_card
 				//x = x - 32
 				i = 0
 			}

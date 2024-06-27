@@ -2,8 +2,35 @@ if (!drag) {
 		if(place_meeting(x,y,obj_spawn)){
 			obj_spawn.life --;
 		}
+		
+		if (level == 1){
+		
+		if (otherObject != 0){
+			if(typeOfEnemy == 0){
+				typeOfEnemy = otherObject.type	
+				instance_destroy(otherObject)
+				image_alpha = 0
+			}
+		}
 
-		if(collision == false){
+				
+
+		// Troca a sprite da carta
+		if(sprite_index == spr_grabEnemy_card){
+			sprite_index = spr_grabEnemy_card
+		}else if(sprite_index != spr_fire_ball_card){
+			if (i < 30) {	
+				i++
+			}else{
+				sprite_index = spr_grabEnemy_card
+				//x = x - 32
+				i = 0
+			}
+			canBeDraged = false
+		}
+
+		}else if(level == 2){
+			if(collision == false){
 		if(otherObject.numeracao >= 1 && otherObject.numeracao <= 5){
 			//show_debug_message("Entre 1 e 5")
 			if (otherObject.numeracao == 1){
@@ -45,9 +72,9 @@ if (!drag) {
 			}
 		}
 		}
-		direction = radtodeg(arctan2(y - newY, newX - x))
+		direction = radtodeg(arctan2(y - newY, x - newX))
 		
-		if(point_distance(x,y,newX,newY) > 20){
+		if(point_distance(x,y,newX,newY) > 10){
 			stopped = false
 			x += lengthdir_x(20,direction)
 			y += lengthdir_y(20,direction)
@@ -55,23 +82,7 @@ if (!drag) {
 			stopped = true
 			image_angle = 0
 		}
-		
-		// Troca a sprite da carta
-		if(sprite_index == spr_fire_ball_card && stopped){
-			sprite_index = spr_fire_ball_attack
-		}else if(sprite_index != spr_fire_ball_card){
-			if (i < 30) {	
-				i++
-			}else{
-				sprite_index = spr_fire_ball_attack
-				//x = x - 32
-				i = 0
-			}
-			canBeDraged = false
 		}
-		
-		
-	
 }else{
 	// Arrasta a carta
 	x = mouse_x + xx;
