@@ -3,8 +3,6 @@ if (!drag) {
 			obj_spawn.life --;
 		}
 		
-		if (level == 1){
-		
 		if (otherObject != 0){
 			if(typeOfEnemy == 0){
 				typeOfEnemy = otherObject.type	
@@ -29,60 +27,7 @@ if (!drag) {
 			canBeDraged = false
 		}
 
-		}else if(level == 2){
-			if(collision == false){
-		if(otherObject.numeracao >= 1 && otherObject.numeracao <= 5){
-			//show_debug_message("Entre 1 e 5")
-			if (otherObject.numeracao == 1){
-				newX = x1 + incremento
-			}else if (otherObject.numeracao == 2){
-				newX = x1 + incremento
-			} else if (otherObject.numeracao == 3){
-				newX = x1 + (incremento * 2)
-			} else if (otherObject.numeracao == 4){
-				newX = x1 + (incremento * 3)
-			} else if (otherObject.numeracao == 5){
-				newX = x1 + (incremento * 3)
-			}
-		}else if(otherObject.numeracao > 5 && otherObject.numeracao <= 10){
-			//show_debug_message("Entre 5 e 10")
-			if (otherObject.numeracao == 6){
-				newX = x1 + incremento
-			}else if (otherObject.numeracao == 7){
-				newX = x1 + incremento
-			} else if (otherObject.numeracao == 8){
-				newX = x1 + (incremento * 2)
-			} else if (otherObject.numeracao == 9){
-				newX = x1 + (incremento * 3)
-			} else if (otherObject.numeracao == 10){
-				newX = x1 + (incremento * 3)
-			}
-		}else if(otherObject.numeracao > 10){
-			//show_debug_message("Entre 10 e 15")
-			if (otherObject.numeracao == 11){
-				newX = x1 + incremento
-			}else if (otherObject.numeracao == 12){
-				newX = x1 + incremento
-			} else if (otherObject.numeracao == 13){
-				newX = x1 + (incremento * 2)
-			} else if (otherObject.numeracao == 14){
-				newX = x1 + (incremento * 3)
-			} else if (otherObject.numeracao == 15){
-				newX = x1 + (incremento * 3)
-			}
-		}
-		}
-		direction = radtodeg(arctan2(y - newY, x - newX))
 		
-		if(point_distance(x,y,newX,newY) > 10){
-			stopped = false
-			x += lengthdir_x(20,direction)
-			y += lengthdir_y(20,direction)
-		}else{
-			stopped = true
-			image_angle = 0
-		}
-		}
 }else{
 	// Arrasta a carta
 	x = mouse_x + xx;

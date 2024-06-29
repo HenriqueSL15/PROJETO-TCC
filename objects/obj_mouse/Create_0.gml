@@ -110,20 +110,15 @@ stateDrag = function () {
 					if (enemyID != 0){
 						var grabEnemy = instance_create_layer(mouse_x,mouse_y,"HABILIDADES",obj_grabEnemy_card)
 						grabEnemy.otherObject = enemyID
-						InventoryAdd(obj_inventory.id,7)
+						InventoryAdd(obj_inventory.id,8)
 						InventoryRemove(obj_inventory.id,7)
 					}
-				}else{
-					InventoryRemove(obj_inventory.id,7)
-					var grabEnemy = obj_grabEnemy_card.id
-					grabEnemy.otherObject = ID
-					grabEnemy.level = 2
-					grabEnemy.image_angle = grabEnemy.angle
-					grabEnemy.x = 135
-					grabEnemy.y = 96
-					grabEnemy.newY = yy	+ 60
-					grabEnemy.image_alpha = 1
 				}
+			}else if(itemDrag == 8){
+				InventoryRemove(obj_inventory.id,8)
+				var throwEnemy = instance_create_layer(135,96, "HABILIDADES",obj_throwEnemy_card)
+				throwEnemy.otherObject = ID
+				throwEnemy.newY = yy
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)

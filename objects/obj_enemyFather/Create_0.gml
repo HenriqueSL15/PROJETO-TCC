@@ -1,7 +1,7 @@
 canCount = true
 isColliding = false
 
-life = 1
+life = 9
 
 dano = 1
 

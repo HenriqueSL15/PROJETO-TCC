@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cards_anim",
-    "path":"sprites/spr_cards_anim/spr_cards_anim.yy",
+    "name":"spr_fireball_new_attack",
+    "path":"sprites/spr_fireball_new_attack/spr_fireball_new_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

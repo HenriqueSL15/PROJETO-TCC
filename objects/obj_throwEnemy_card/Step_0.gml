@@ -51,18 +51,17 @@ if (!drag) {
 			x += lengthdir_x(20,direction)
 			y += lengthdir_y(20,direction)
 		}else{
+			sprite_index = spr_fireball_new_attack_loop
 			stopped = true
 			image_angle = 0
 		}
 
 		// Troca a sprite da carta
-		if(sprite_index == spr_grabEnemy_card){
-			sprite_index = spr_grabEnemy_card
-		}else if(sprite_index != spr_fire_ball_card){
+		if(sprite_index != spr_fireball_new_attack){
 			if (i < 30) {	
 				i++
 			}else{
-				sprite_index = spr_grabEnemy_card
+				instance_destroy()
 				//x = x - 32
 				i = 0
 			}

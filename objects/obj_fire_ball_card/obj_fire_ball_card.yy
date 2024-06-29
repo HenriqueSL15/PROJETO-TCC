@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fire_ball_attack_loop",
-    "path":"sprites/spr_fire_ball_attack_loop/spr_fire_ball_attack_loop.yy",
+    "name":"spr_fireball_new_attack",
+    "path":"sprites/spr_fireball_new_attack/spr_fireball_new_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,
