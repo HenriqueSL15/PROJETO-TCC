@@ -6,4 +6,4 @@ inventory[0] = 0
 inventory[1] = 1
 inventory[2] = 2
 inventory[3] = 6
-inventory[4] = 7
+inventory[4] = 8

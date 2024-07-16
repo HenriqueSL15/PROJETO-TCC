@@ -114,11 +114,14 @@ stateDrag = function () {
 						InventoryRemove(obj_inventory.id,7)
 					}
 				}
-			}else if(itemDrag == 8){
-				InventoryRemove(obj_inventory.id,8)
+			}else if(itemDrag == 9){
+				InventoryRemove(obj_inventory.id,9)
 				var throwEnemy = instance_create_layer(135,96, "HABILIDADES",obj_throwEnemy_card)
 				throwEnemy.otherObject = ID
 				throwEnemy.newY = yy
+			}else if(itemDrag == 8){
+				InventoryRemove(obj_inventory.id,8)
+				var ice_card = instance_create_layer(mouse_x,mouse_y, "HABILIDADES",obj_ice_card)
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
