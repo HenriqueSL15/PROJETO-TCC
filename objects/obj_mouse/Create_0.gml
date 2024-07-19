@@ -121,7 +121,7 @@ stateDrag = function () {
 				throwEnemy.newY = yy
 			}else if(itemDrag == 8){
 				InventoryRemove(obj_inventory.id,8)
-				var ice_card = instance_create_layer(mouse_x,mouse_y, "HABILIDADES",obj_ice_card)
+				var ice_card = instance_create_layer(mouse_x,yy, "HABILIDADES",obj_ice_card)
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
