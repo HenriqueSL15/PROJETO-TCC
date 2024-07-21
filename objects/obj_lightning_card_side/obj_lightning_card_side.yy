@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lightning_card",
+  "%Name":"obj_lightning_card_side",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lightning_card",
+  "name":"obj_lightning_card_side",
   "overriddenProperties":[],
   "parent":{
     "name":"cards",

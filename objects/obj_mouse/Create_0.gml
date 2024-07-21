@@ -6,6 +6,7 @@ slotDrag = -1
 itemDrag = -1
 
 yy = 0
+xx = 0
 
 mouseOver = function (){
 	//Resultados vazios de hover
@@ -62,13 +63,17 @@ stateDrag = function () {
 				yy = 180
 			}
 			
-			if(mouse_y > 353 && mouse_y < 465){
-				yy = 406
-			}else if(mouse_y < 350 && mouse_y > 238){
-				yy = 290
-			}else{
-				yy = 180
-			}
+			if(mouse_x > 428 && mouse_x < 645){
+				xx = 530
+			}else if(mouse_x > 645 && mouse_x < 856){
+				xx = 530 + 220
+			}else if(mouse_x > 856 && mouse_x < 1070){
+				xx = 530 + (220 * 2)
+			}else if(mouse_x > 1070 && mouse_x < 1286){
+				xx = 530 + (220 * 3)
+			}else if(mouse_x > 1286 && mouse_x < 1500){
+				xx = 530 + (220 * 4)
+			}						
 			
 			if(instance_position(mouse_x,mouse_y,obj_light)){
 				var ID = instance_position(mouse_x,mouse_y,obj_light)	
@@ -114,14 +119,17 @@ stateDrag = function () {
 						InventoryRemove(obj_inventory.id,7)
 					}
 				}
-			}else if(itemDrag == 9){
-				InventoryRemove(obj_inventory.id,9)
+			}else if(itemDrag == 10){
+				InventoryRemove(obj_inventory.id,10)
 				var throwEnemy = instance_create_layer(135,96, "HABILIDADES",obj_throwEnemy_card)
 				throwEnemy.otherObject = ID
 				throwEnemy.newY = yy
 			}else if(itemDrag == 8){
 				InventoryRemove(obj_inventory.id,8)
 				var ice_card = instance_create_layer(mouse_x,yy, "HABILIDADES",obj_ice_card)
+			}else if(itemDrag == 9){
+				InventoryRemove(obj_inventory.id,9)
+				var ice_card = instance_create_layer(xx,yy, "HABILIDADES",obj_lightning_card)
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)

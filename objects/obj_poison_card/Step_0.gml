@@ -70,7 +70,7 @@ if (!drag) {
 			}
 			canBeDraged = false
 		}
-		show_debug_message(instance_number(obj_poison_card))
+		
 		if(stopped){
 			if(instance_number(obj_poison_card_side) < 2){
 				instance_create_layer(newX + incremento, y, "HABILIDADES",obj_poison_card_side)

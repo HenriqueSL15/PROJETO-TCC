@@ -12,6 +12,8 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_disc_card","path":"objects/obj_disc_card/obj_disc_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_throwEnemy_card","path":"objects/obj_throwEnemy_card/obj_throwEnemy_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_ice_card","path":"objects/obj_ice_card/obj_ice_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_lightning_card","path":"objects/obj_lightning_card/obj_lightning_card.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_lightning_card_side","path":"objects/obj_lightning_card_side/obj_lightning_card_side.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_enemyFather",

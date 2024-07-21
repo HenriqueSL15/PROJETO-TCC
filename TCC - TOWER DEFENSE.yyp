@@ -72,6 +72,7 @@
     {"id":{"name":"obj_light_5","path":"objects/obj_light_5/obj_light_5.yy",},},
     {"id":{"name":"obj_light_6","path":"objects/obj_light_6/obj_light_6.yy",},},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},},
+    {"id":{"name":"obj_lightning_card_side","path":"objects/obj_lightning_card_side/obj_lightning_card_side.yy",},},
     {"id":{"name":"obj_lightning_card","path":"objects/obj_lightning_card/obj_lightning_card.yy",},},
     {"id":{"name":"obj_linha","path":"objects/obj_linha/obj_linha.yy",},},
     {"id":{"name":"obj_mago","path":"objects/obj_mago/obj_mago.yy",},},

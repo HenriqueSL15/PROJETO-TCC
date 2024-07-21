@@ -4,7 +4,7 @@ vspd = 0;
 timer = 0;
 //valorEnemy = irandom(2);
 
-yy = [445, 330, 220]
+yy = [440, 330, 220]
 
 xx = 1397
 
