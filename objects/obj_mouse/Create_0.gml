@@ -113,9 +113,9 @@ stateDrag = function () {
 			}else if(itemDrag == 7){
 				if (instance_number(obj_grabEnemy_card) < 1){
 					if (enemyID != 0){
-						var grabEnemy = instance_create_layer(mouse_x,mouse_y,"HABILIDADES",obj_grabEnemy_card)
+						var grabEnemy = instance_create_layer(xx,yy,"HABILIDADES",obj_grabEnemy_card)
 						grabEnemy.otherObject = enemyID
-						InventoryAdd(obj_inventory.id,8)
+						InventoryAdd(obj_inventory.id,10)
 						InventoryRemove(obj_inventory.id,7)
 					}
 				}
