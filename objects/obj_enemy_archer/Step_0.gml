@@ -5,7 +5,7 @@ if(life > 0){
 		}
 	}else{
 		if(x == pos[0]){
-			x = pos[1]
+			x = pos[2]
 		}else if(x == pos[1]){
 			x = pos[2]
 		}else if(x == pos[2]){
@@ -13,10 +13,11 @@ if(life > 0){
 		}
 		
 	if (x == pos[3]){
-		ticks = 40
-		instance_create_layer(x,y-90,"habilidades",obj_flecha)
-		//sprite_ipndex = spr_enemy_attacking
-		show_debug_message(obj_mago.vida)
+		ticks = 145
+		if(e == 0){
+			e = 1
+			sprite_index = spr_enemy_archer_attacking
+		}
 	}else{
 		ticks = 80
 	}
