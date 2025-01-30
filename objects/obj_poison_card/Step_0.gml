@@ -62,9 +62,9 @@ if (!drag) {
 		}
 		
 		// Troca a sprite da carta
-		if(sprite_index == spr_poison_card && stopped){
+		if(sprite_index == spr_barrel && stopped){
 			sprite_index = spr_poison_card_1
-		}else if(sprite_index != spr_poison_card){
+		}else if(sprite_index != spr_barrel){
 			if (i < 30) {	
 				i++
 			}else{
