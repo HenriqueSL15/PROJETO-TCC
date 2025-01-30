@@ -2,13 +2,15 @@
 life = 1
 vspd = 0;
 timer = 0;
+
+emptySlots = 0
 //valorEnemy = irandom(2);
 
 yy = [440, 330, 220]
 
-xx = 1397
+pos = [1397,1172,960,750,530]
 
-avaibleCards = [obj_enemy, obj_enemy2, obj_enemy3]
+xx = 1397
 
 enemiesSpawned = 0
 

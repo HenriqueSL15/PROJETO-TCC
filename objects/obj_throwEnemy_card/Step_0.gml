@@ -1,3 +1,7 @@
+if (global.paused) {
+    return;
+}
+
 if (!drag) {
 		if(place_meeting(x,y,obj_spawn)){
 			obj_spawn.life --;
@@ -6,7 +10,7 @@ if (!drag) {
 		if(otherObject.numeracao >= 1 && otherObject.numeracao <= 5){
 			//show_debug_message("Entre 1 e 5")
 			if (otherObject.numeracao == 1){
-				newX = x1 + incremento
+				newX = x1
 			}else if (otherObject.numeracao == 2){
 				newX = x1 + incremento
 			} else if (otherObject.numeracao == 3){
@@ -14,12 +18,12 @@ if (!drag) {
 			} else if (otherObject.numeracao == 4){
 				newX = x1 + (incremento * 3)
 			} else if (otherObject.numeracao == 5){
-				newX = x1 + (incremento * 3)
+				newX = x1 + (incremento * 4)
 			}
 		}else if(otherObject.numeracao > 5 && otherObject.numeracao <= 10){
 			//show_debug_message("Entre 5 e 10")
 			if (otherObject.numeracao == 6){
-				newX = x1 + incremento
+				newX = x1
 			}else if (otherObject.numeracao == 7){
 				newX = x1 + incremento
 			} else if (otherObject.numeracao == 8){
@@ -27,12 +31,12 @@ if (!drag) {
 			} else if (otherObject.numeracao == 9){
 				newX = x1 + (incremento * 3)
 			} else if (otherObject.numeracao == 10){
-				newX = x1 + (incremento * 3)
+				newX = x1 + (incremento * 4)
 			}
 		}else if(otherObject.numeracao > 10){
 			//show_debug_message("Entre 10 e 15")
 			if (otherObject.numeracao == 11){
-				newX = x1 + incremento
+				newX = x1
 			}else if (otherObject.numeracao == 12){
 				newX = x1 + incremento
 			} else if (otherObject.numeracao == 13){
@@ -40,7 +44,7 @@ if (!drag) {
 			} else if (otherObject.numeracao == 14){
 				newX = x1 + (incremento * 3)
 			} else if (otherObject.numeracao == 15){
-				newX = x1 + (incremento * 3)
+				newX = x1 + (incremento * 4)
 			}
 		}
 		}
@@ -51,16 +55,19 @@ if (!drag) {
 			x += lengthdir_x(20,direction)
 			y += lengthdir_y(20,direction)
 		}else{
-			sprite_index = spr_fireball_new_attack_loop
+			sprite_index = spr_barrel_hit
 			stopped = true
 			image_angle = 0
 		}
 
 		// Troca a sprite da carta
-		if(sprite_index != spr_fireball_new_attack){
+		if(sprite_index != spr_barrel){
+			image_xscale = 1.2
+			image_yscale = 1.2
 			if (i < 30) {	
 				i++
 			}else{
+				instance_destroy(obj_grabEnemy_card)
 				instance_destroy()
 				//x = x - 32
 				i = 0

@@ -1,3 +1,10 @@
+if (global.paused) {
+	image_speed = 0
+    return;
+}else {
+	image_speed = 1
+}
+
 var flipped = direction;
 var gun_x = (x+90) * (flipped)
 var _xx = x+lengthdir_x(15, image_angle)

@@ -1,0 +1,15 @@
+instance_destroy(obj_bow_card)
+instance_destroy(obj_lightning_card)
+instance_destroy(obj_lightning_card_side)
+instance_destroy(obj_disc_card)
+instance_destroy(obj_grabEnemy_card)
+instance_destroy(obj_throwEnemy_card)
+instance_destroy(obj_poison_card)
+instance_destroy(obj_poison_card_side)
+instance_destroy(obj_ice_card)
+instance_destroy(obj_shield_card)
+instance_destroy(obj_sword_card)
+instance_destroy(obj_teleport_card)
+
+
+room_restart()

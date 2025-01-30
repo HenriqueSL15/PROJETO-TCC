@@ -1,3 +1,7 @@
+if (global.paused) {
+    return;
+}
+
 if (!drag) {
 		if(place_meeting(x,y,obj_spawn)){
 			obj_spawn.life --;

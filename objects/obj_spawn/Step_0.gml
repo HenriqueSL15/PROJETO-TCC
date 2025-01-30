@@ -1,18 +1,36 @@
-
 randomize()
-enemy = choose(obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer, obj_enemy_7)
+
+enemyGroup = [obj_enemy, obj_enemy2, obj_enemy3]
+//enemyGroup[enemiesSpawned]
 if(enemiesSpawned < 3){
-	var inimigo = instance_create_layer(xx,yy[enemiesSpawned],"INIMIGOS", enemy)
-	var hpBar = instance_create_layer(xx-100,yy[enemiesSpawned]-90, "INIMIGOS", obj_hpBar)
-	hpBar.indice = enemiesSpawned
-	hpBar.enemyType = inimigo
-	enemiesSpawned++
+	timer++
+	if(timer >= 120){
+		if(obj_counter.waves == 0 && enemiesSpawned == 0){
+			emptySlots = 0
+			for(var i = 0;i < array_length(obj_inventory.inventory);i++){
+				if(obj_inventory.inventory[i] == -1){
+					emptySlots += 1
+				}
+			}
+			if(emptySlots <= 4){
+				createEnemy(enemiesSpawned)
+				enemiesSpawned+=1
+				timer = 0
+			}
+		}else{
+			createEnemy(enemiesSpawned);
+			enemiesSpawned+=1
+			timer = 0				
+		}
+	}
 }
 
 
 if(enemiesSpawned == 3){
-	if(!instance_exists(obj_enemy) && !instance_exists(obj_enemy2) && !instance_exists(obj_enemy3) && !instance_exists(obj_enemy_archer)){
+	if(!instance_exists(obj_enemy) && !instance_exists(obj_enemy2) && !instance_exists(obj_enemy3)
+	&& !instance_exists(obj_enemy_archer) && !instance_exists(obj_enemy_7)){
 		enemiesSpawned = 0
+		obj_counter.waves++
 	}
 }
 

@@ -1,3 +1,7 @@
+if (global.paused) {
+    return;
+}
+
 // Troca a sprite da carta
 if(sprite_index != spr_rectangle_disc){
 		sprite_index = spr_rectangle_disc

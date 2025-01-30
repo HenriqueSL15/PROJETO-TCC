@@ -1,3 +1,7 @@
+if (global.paused) {
+    return;
+}
+
 if (!drag) {
 		if(place_meeting(x,y,obj_spawn)){
 			obj_spawn.life --;
@@ -59,12 +63,12 @@ if (!drag) {
 		
 		// Troca a sprite da carta
 		if(sprite_index == spr_poison_card && stopped){
-			sprite_index = spr_poison_attack
+			sprite_index = spr_poison_card_1
 		}else if(sprite_index != spr_poison_card){
 			if (i < 30) {	
 				i++
 			}else{
-				sprite_index = spr_poison_attack
+				sprite_index = spr_poison_card_1
 				//x = x - 32
 				i = 0
 			}
@@ -72,14 +76,11 @@ if (!drag) {
 		}
 		
 		if(stopped){
-			if(instance_number(obj_poison_card_side) < 2){
-				instance_create_layer(newX + incremento, y, "HABILIDADES",obj_poison_card_side)
-				instance_create_layer(newX - incremento, y, "HABILIDADES",obj_poison_card_side)
-			}
+			if(!place_meeting(newX + incremento, y, obj_poison_card_side) && !place_meeting(newX - incremento, y, obj_poison_card_side)){
+				var side1 = instance_create_layer(newX + incremento, y, "HABILIDADES",obj_poison_card_side)
+				var side2 = instance_create_layer(newX - incremento, y, "HABILIDADES",obj_poison_card_side)
+			}	
 		}
-		
-		
-	
 }else{
 	// Arrasta a carta
 	x = mouse_x + xx;

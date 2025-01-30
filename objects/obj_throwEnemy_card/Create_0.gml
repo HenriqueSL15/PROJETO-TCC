@@ -10,11 +10,10 @@ stopped = false
 typeOfEnemy = obj_grabEnemy_card.typeOfEnemy
 
 
-
 newX = 0
 newY = 0
 
-image_xscale = 0.7
-image_yscale = 0.7
+image_xscale = 1.15
+image_yscale = 1.15
 // Inherit the parent event
 event_inherited();

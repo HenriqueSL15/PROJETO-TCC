@@ -1,0 +1,3 @@
+if(initialMenu){
+	initialMenu = false
+}

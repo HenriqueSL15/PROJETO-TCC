@@ -11,7 +11,7 @@ newX = 0
 newY = 0
 
 angle = 45
-
+alarm[0] = 60 * 3
 image_angle = angle
 
 image_xscale = 1

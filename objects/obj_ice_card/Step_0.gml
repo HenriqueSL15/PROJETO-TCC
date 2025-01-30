@@ -1,3 +1,7 @@
+if (global.paused) {
+    return;
+}
+
 // Troca a sprite da carta
 if(sprite_index != spr_ice){
 		sprite_index = spr_ice
@@ -7,6 +11,3 @@ if(sprite_index != spr_ice){
 if(place_meeting(x,y,obj_spawn)){
 	obj_spawn.life --;
 }
-
-
-show_debug_message(i)

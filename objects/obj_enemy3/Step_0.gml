@@ -1,3 +1,10 @@
+if (global.paused) {
+	image_speed = 0
+    return;
+}else {
+	image_speed = 1
+}
+
 if(life > 0){
 	if(instance_exists(obj_wikipedia)){
 		canCount = false
@@ -23,7 +30,7 @@ if(life > 0){
 		
 	if (x == pos[4]){
 		ticks = 10
-		obj_mago.vida -= 1
+		obj_mago.vida -= dano
 		obj_mago.hit = true
 		sprite_index = spr_enemy2_attacking
 		show_debug_message(obj_mago.vida)

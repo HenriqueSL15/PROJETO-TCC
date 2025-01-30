@@ -2,6 +2,8 @@
 // Você pode escrever seu código neste editor
 dano = 1 
 i = 0
+alarm[0] = 60 * 3
+fatherId = noone
 
 otherObject = 0
 

@@ -1,2 +1,1 @@
-
-destroyer = false
+instance_destroy()	

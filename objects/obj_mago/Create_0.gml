@@ -1,3 +1,9 @@
 a = 0
+b = 0
+win = false
+restart = false
+canHit = true
 hit = false
+bigHit = false
+smallHit = false
 vida = 20

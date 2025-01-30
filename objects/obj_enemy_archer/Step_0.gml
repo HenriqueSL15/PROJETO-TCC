@@ -1,3 +1,9 @@
+if (global.paused) {
+	image_speed = 0
+    return;
+}else {
+	image_speed = 1
+}
 if(life > 0){
 	if(a < ticks){
 		if(canCount){
@@ -5,6 +11,8 @@ if(life > 0){
 		}
 	}else{
 		if(x == pos[0]){
+			x = pos[1]
+		}else if(x == pos[1]){
 			x = pos[2]
 		}else if(x == pos[1]){
 			x = pos[2]

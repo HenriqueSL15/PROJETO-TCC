@@ -1,12 +1,8 @@
 isColliding = true
-if(!other.drag && other.stopped){
-	if(other.typeOfEnemy == "tank"){
-		life-=5	
-	}else if(other.typeOfEnemy == "normal"){
-		life-=3
-	}else if(other.typeOfEnemy == "light"){
-		life-=1
-	}
+if(!other.drag && other.stopped && c == 0){
+	life-=dano
+	obj_mago.smallHit = true
 	vspd = 0
-
+	c = 1
+	alarm[11] = 60
 }

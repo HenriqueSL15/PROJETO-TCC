@@ -18,3 +18,7 @@ if(life > 0){
 }else{
 	instance_destroy()	
 }
+
+if (global.paused) {
+    return;
+}

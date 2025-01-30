@@ -1,5 +1,9 @@
 ticks = 80
 type = "tank"
+enemy = "arqueiro"
+
+life = 7
+dano = life * 0.6
 
 e = 0
 

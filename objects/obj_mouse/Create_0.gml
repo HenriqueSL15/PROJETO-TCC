@@ -42,7 +42,7 @@ stateFree = function(){
 	mouseOver()
 	
 	//Começa a arrastar um item se o slot não for vazio
-	if (mouse_check_button(mb_left)) && (slotHover != -1) && (inventoryHover.inventory[slotHover] != -1){
+	if (mouse_check_button(mb_left)) && (slotHover != -1) && (inventoryHover.inventory[slotHover] != -1 && !global.paused){
 		//Entra no estado de arrastar
 		state = stateDrag
 		itemDrag = inventoryHover.inventory[slotHover]
@@ -79,8 +79,8 @@ stateDrag = function () {
 				var ID = instance_position(mouse_x,mouse_y,obj_light)	
 			}
 			
-			if(instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer])){
-				enemyID = instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer])
+			if(instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer, obj_enemy_7])){
+				enemyID = instance_position(mouse_x,mouse_y, [obj_enemy,obj_enemy2,obj_enemy3,obj_enemy_archer, obj_enemy_7])
 			}else {
 				enemyID = 0	
 			}
@@ -101,13 +101,25 @@ stateDrag = function () {
 				instance_create_layer(510,yy,"HABILIDADES",obj_teleport_card)
 			}else if(itemDrag == 4){
 				InventoryRemove(obj_inventory.id,4)
-				instance_create_layer(964,yy,"HABILIDADES",obj_bow_card)
+				if(yy == 406){
+					instance_create_layer(xx,yy,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,290,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,180,"HABILIDADES",obj_bow_card)
+				}else if(yy == 290){
+					instance_create_layer(xx,406,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,yy,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,180,"HABILIDADES",obj_bow_card)
+				}else{
+					instance_create_layer(xx,406,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,290,"HABILIDADES",obj_bow_card)
+					instance_create_layer(xx,yy,"HABILIDADES",obj_bow_card)
+				}
 			}else if(itemDrag == 5){
 				InventoryRemove(obj_inventory.id,5)
 				instance_create_layer(972,325,"HABILIDADES",obj_disc_card)
 			}else if(itemDrag == 6){
 				InventoryRemove(obj_inventory.id,6)
-				var poison = instance_create_layer(135,96,"HABILIDADES",obj_poison_card)
+				var poison = instance_create_layer(135,96,"HABILIDADES_CHAO",obj_poison_card)
 				poison.otherObject = ID
 				poison.newY = yy
 			}else if(itemDrag == 7){
@@ -115,8 +127,8 @@ stateDrag = function () {
 					if (enemyID != 0){
 						var grabEnemy = instance_create_layer(xx,yy,"HABILIDADES",obj_grabEnemy_card)
 						grabEnemy.otherObject = enemyID
-						InventoryAdd(obj_inventory.id,10)
 						InventoryRemove(obj_inventory.id,7)
+						InventoryAdd(obj_inventory.id,10)
 					}
 				}
 			}else if(itemDrag == 10){
@@ -126,10 +138,80 @@ stateDrag = function () {
 				throwEnemy.newY = yy
 			}else if(itemDrag == 8){
 				InventoryRemove(obj_inventory.id,8)
-				var ice_card = instance_create_layer(mouse_x,yy, "HABILIDADES",obj_ice_card)
+				var ice_card = instance_create_layer(mouse_x,yy, "HABILIDADES_CHAO",obj_ice_card)
 			}else if(itemDrag == 9){
 				InventoryRemove(obj_inventory.id,9)
-				var ice_card = instance_create_layer(xx,yy, "HABILIDADES",obj_lightning_card)
+				if(yy == 406){
+					if(xx == 530){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 750){
+						instance_create_layer(xx, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 110, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 970){
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 110, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 1190){
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+					}else{
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220, 290, "HABILIDADES",obj_lightning_card_side)
+					}
+				}else if(yy == 290){
+					if(xx == 530){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 406, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 203, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 750){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 406, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220 * 2, 406, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 970){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 406, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220 * 2, 406, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 1190){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 406, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220 * 2, 203, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220 * 2, 406, "HABILIDADES",obj_lightning_card_side)
+					}else{
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 406, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 203, "HABILIDADES",obj_lightning_card_side)
+						
+					}
+				}else if(yy == 180){
+					if(xx == 530){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 750){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 110, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 970){
+						instance_create_layer(xx - 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 110, 290, "HABILIDADES",obj_lightning_card_side)
+					}else if(xx == 1190){
+						instance_create_layer(xx + 220 * 2, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx - 330, 290, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+					}else{
+						instance_create_layer(xx + 220, yy, "HABILIDADES",obj_lightning_card_side)
+						instance_create_layer(xx, 290, "HABILIDADES",obj_lightning_card_side)
+						
+					}
+				}
 			}
 		}
 		if (slotHover != -1) InventorySwap(inventoryDrag, slotDrag, inventoryHover, slotHover)
